@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.links{
+    background-color: orange;
+}
+
+/* h2{
+    display: flex;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    justify-content: flex-start;
+} */
+
+h1 {
+    cursor: pointer;
+    background-color: orange;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent !important;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px 10px;
+}
+
+button {
+    padding: 15px 25px;
+    /* overflow: hidden; */
+    background-clip: padding-box;
+    background-color: orange;
+    color: white;
+    font-size: medium;
+    /* background-blend-mode: color; */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+/* background: linear-gradient(to right, red, blue); */
+
+button:hover{
+    background-color: blue;
+}
+
+.features_section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.features_section h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.card_grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+   gap: 20px;
+   /* background-color: white; */
+}
+
+.card {
+    background:white;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .icon {
+    background-color: white;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.card h3{
+    background-color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p{
+    background-color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    color: black;
+}
+
+.hero_section {
+    color: white;
+    padding: 80px 40px;
+    background: linear-gradient(100deg, #103098 0%, #204bb5 40%, #e85d04 100%);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.hero_content {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.description{
+    background-color: transparent !important;
+}
+.hero_content h1, .hero_content p{
+    color: white;
+}
+
+.hero_text {
+    background-color: transparent !important;
+    flex: 1;
+    max-width: 600px;
+}
+
+.tagline {
+    background-color: transparent !important;
+    font-style: italic;
+    opacity: 0.8;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.hero_text h1{
+    background-color: transparent !important;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.highlight{
+    background-color: transparent !important;
+    color: #ffcc00;
+}
+
+.description {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero_buttons {
+    background-color: transparent !important;
+  display: flex;
+  gap: 15px;
+}
+
+.btn{
+    /* NEW ADDITIONS FOR <a> TAGS */
+  display: inline-block;    /* Allows the button to have height/width */
+  text-decoration: none;    /* Removes the blue underline */
+  
+  /* OLD STYLES (Keep these) */
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.pri_but{
+    background-color: #ffde59;
+    color: #333;
+    border: none;
+}
+
+.pri_but:hover{
+    background-color: #ffde59;
+    transform: translateY(-3px);
+}
+
+.sec_but{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.sec_but:hover{
+    background-color: transparent !important;
+    transform: translateY(-3px);
+}
+
+.glass_card {
+  flex: 0 0 350px; /* Fixed width for the card */
+  background: rgba(255, 255, 255, 0.15); /* Low opacity white */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px); /* The "Frosted Glass" effect */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.glass_card h3 {
+    background-color: transparent !important;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.trend_list {
+    background-color: transparent !important;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block; /* Centers the list block */
+}
+
+.trend_list li {
+    background-color: transparent !important;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.glass_card p {
+    background-color: transparent !important;
+  font-size: 13px;
+  opacity: 0.8;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .hero_content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero_buttons {
+    justify-content: center;
+  }
+
+  .trend_list {
+    text-align: center;
+  }
+}
+
+.re_card{
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    background:whitesmoke;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.re_card p{
+    background-color: transparent !important;
+}
+
+.re_card h3{
+    background-color: transparent !important;
+    color: orange;
+}
+
+.re_card:hover{
+    transform: translateY(-3px);
+}
+
+.re_card_grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+   gap: 20px;
+   background-color: white;
+}
+
+footer{
+    background-color: orange;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.destination {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destination h1{
+    background-color: #f8f9fa;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+}
+
+.destination p{
+    color: grey;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.search_box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.search_box input{
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.search_box input:focus {
+    box-shadow: 0 4px 12px rgba(0,0,0,0,1);
+    border-color: grey;
+}
+
+.destination .card_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.destination .card{
+    background: white;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.destination .card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card_image{
+    height: 180px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 17px;
+    margin: 10px 10px 0 10px;
+    width: calc(100% - 10px);
+}
+
+.destination .card_grid .card .card-content{
+    background-color: white;
+    padding: 15px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tag{
+    display: inline-block;
+    font-family: sans-serif;
+    background-color: #e3f2fd;
+    color:#1976d2;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.destination .card h3{
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.destination .card p{
+    font-size: 0.85rem;
+    font-family: sans-serif;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.destination .card .time{
+    font-size: 0.8rem;
+    color: black;
+    margin-bottom: 0;
+    font-weight: 500;
+}
