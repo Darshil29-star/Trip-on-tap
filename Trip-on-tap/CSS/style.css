@@ -26,6 +26,7 @@ h1 {
 }
 
 a {
+    color: black;
     font-family: "Montserrat", sans-serif;
     background-color: transparent !important;
     font-weight: 500;
@@ -37,7 +38,7 @@ header {
     background-color: orange;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     padding: 10px 10px;
 }
 
@@ -104,6 +105,18 @@ button:hover{
     font-size: 18px;
     margin-bottom: 10px;
     color: #333;
+}
+.card ul{
+    background-color: white;
+    list-style: none;
+}
+.card li{
+    background-color: white;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    align-items: center;
 }
 
 .card p{
@@ -515,7 +528,93 @@ footer{
     margin-bottom: 8px;
 }
 
+.info_card li b{
+    background-color: white;
+}
+
 @media(max-width: 768px){
     .top h1 {font-size: 2.5rem;}
     .container{margin-top: 20px;}
+}
+
+.pot{
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.form-section{
+    flex: 2;
+}
+
+.form-section h1{
+    background-color: #f4f6f8;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    color: #222;
+} 
+
+.subtitle{
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.form-group input, .form-group select, .form-group textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: white;
+}
+
+.form-group2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group2 label{
+    margin-bottom: 0;
+    min-width: 50px;
+}
+
+.short-input{
+    width: 150px !important;
+}
+
+.medium-input{
+    width: 250px !important;
+}
+
+.submit{
+    background-color: orange;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.sidebar{
+    cursor:pointer;
+    flex: 1;
 }
