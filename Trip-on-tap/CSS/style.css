@@ -759,7 +759,7 @@ footer{
     margin-bottom: 15px;
 }
 
-input[type="text"],input[type="number"],input[type="email"],input[type="tel"]{
+input[type="text"],input[type="number"],input[type="email"],input[type="tel"],textarea,select{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -768,3 +768,18 @@ input[type="text"],input[type="number"],input[type="email"],input[type="tel"]{
     background-color: #fcfcfc;
 }
 
+.btn-submit{
+    background-color: #ff9800;
+    width: 100%;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-submit:hover{
+    background-color: #e68900;
+}
