@@ -19,6 +19,15 @@ function validateForm(){
         isValid = false;
     }
 
+    
+    // for(let i=0;i<name.length();i++){
+    //     if(!isNaN(name[i])){
+    //         isValid = false;
+    //         alert("Please enter your name properly (without numbers and other characters).");
+    //         break;
+    //     }
+    // }
+
     if(destination === ""){
         // document.getElementById("deserror").style.display = "block";
         alert("Please choose your destination.");
@@ -61,6 +70,54 @@ function validateForm(){
     if(number_travellers <= 0){
         // document.getElementById("noerror").style.display = "block";
         alert("kindly enter number of traveller properly.");
+        isValid = false;
+    }
+    return isValid;
+}
+
+function validateDestinationpac(){
+    let name = document.getElementById("Name").value;
+    let age = document.getElementById("Age").value;
+    let address = document.getElementById("Address").value;
+    let number = document.getElementById("phoneno").value;
+    let travellers = document.getElementById("number_travellers").value;
+    let tradate = document.getElementById("adate").value;
+
+    let isValid = true;
+
+    if(name === ""){
+        alert("Please enter your name.");
+        isValid = false;
+    }
+
+    if(tradate === ""){
+        alert("Please select the travel date from the available dates.");
+        isValid = false;
+    }
+
+    if(age < 0){
+        alert("Please enter valide age of traveller.");
+        isValid = false;
+    }else if(age == 0){
+        alert("Please enter your age.");
+        isValid = false;
+    }
+
+    if(address === "" ){
+        alert("Please enter your current address.");
+        isValid = false;
+    }
+
+    if(number.length() != 10){
+        alert("Please enter the valide mobile number(10 digits).");
+        isValid = false;
+    }
+
+    if(travellers < 0){
+        alert("Please enter the valide number of travellers.");
+        isValid = false;
+    }else if(travellers === 0){
+        alert("Please enter the number of travellers");
         isValid = false;
     }
     return isValid;

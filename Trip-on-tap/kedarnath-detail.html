@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trip On Tap - one stop destination for travel</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -71,25 +72,25 @@
         </ol>
             <h2>Book Kedarnath Package</h2>
             <br>
-            <form method="post" class="booking-form">
+            <form method="post" class="booking-form" onsubmit="return validateDestinationpac()">
                 <div class="form-group">
                     <!-- <label for="form">Name: </label> -->
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" id="Name" placeholder="Full Name">
                 </div>
 
                 <div class="form-group">
                     <!-- <label for="form">Age: </label> -->
-                    <input type="number" placeholder="Age" required>
+                    <input type="number" id="Age" placeholder="Age">
                 </div>
 
                 <div class="form-group">
                     <!-- <label for="form">Address: </label> -->
-                    <input type="text" placeholder="Home Address" required>
+                    <input type="text" placeholder="Home Address" id="Address">
                 </div>
 
                 <div class="form-group">
                     <!-- <label for="form">Mobile Number: </label> -->
-                    <input type="tel" placeholder="enter your mobile number" required>
+                    <input type="tel" placeholder="enter your mobile number" id="phoneno">
                 </div>
 
                 <div class="form-group">
@@ -98,20 +99,20 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="number" placeholder="Number of travellers" required>
+                    <input type="number" placeholder="Number of travellers" id="number_travellers">
                 </div>
 
                 <textarea id="extro" rows="3" placeholder="Any request or notes?"></textarea>
                 <br>
 
-                <select id="adate" required>
-                    <option>Select travel Date</option>
-                    <option>10 Oct - 14 Oct</option>
-                    <option>20 Oct - 24 Oct</option>
-                    <option>5 Nov - 9 Nov</option>
+                <select id="adate">
+                    <option value="">Select travel Date</option>
+                    <option value="1">10 Oct - 14 Oct</option>
+                    <option value="2">20 Oct - 24 Oct</option>
+                    <option value="3">5 Nov - 9 Nov</option>
                 </select>
 
-                <button type="submit" class="btn-submit">Confirm Booking</button>
+                <button type="submit" class="btn-submit" value="submit">Confirm Booking</button>
             </form>
     </div>
     <footer>
