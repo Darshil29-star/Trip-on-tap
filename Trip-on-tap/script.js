@@ -122,3 +122,22 @@ function validateDestinationpac(){
     }
     return isValid;
 }
+
+function searchFunction(){
+    let input = document.getElementById("searchbox");
+    let filter = input.value.toUpperCase();
+    let cardgrid = document.querySelector(".card_grid");
+    let cards = cardgrid.getElementsByTagName("a");
+
+    for(let i=0;i<cards.length;i++){
+        let title = cards[i].querySelector("h3");
+        if(title){
+            let txtvalue = title.textContent || title.innerText;
+            if(txtvalue.toUpperCase().indexOf(filter) > -1){
+                cards[i].style.display = "block";
+            }else{
+                cards[i].style.display = "none";
+            }
+        }
+    }
+}

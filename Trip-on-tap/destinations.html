@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trip On Tap - one stop destination for travel</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -24,12 +25,12 @@
     <section class="destination">
         <br>
         <br>
-        <h1>Explore Destinations</h1>
+        <h1 style="background-color: transparent;">Explore Destinations</h1>
         <br>
         <p>Discover beach holidays, mountain adventure, city breaks adn international trips.</p>
         <br>
         <div class="search_box">
-            <input type="text" placeholder="Search Destinations...">
+            <input type="text" id="searchbox" onkeyup="searchFunction()" placeholder="Search Destinations...">
         </div>
 
         <div class="card_grid">
