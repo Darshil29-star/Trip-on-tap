@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trip On Tap - one stop destination for travel</title>
-    <script src="script.js"></script>
+    <script src="script2(destinations).js"></script>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -27,7 +27,7 @@
 
     <div class="card_grid" style="max-width: 1500px;">
         <div class="card2">
-            <h2>Kedarnath</h2>
+            <h2 id="destination">Kedarnath</h2>
             <p><strong>Availabe Dates:</strong> 10 Oct - 14 Oct, 20 Oct - 24 Oct, 5 Nov - 9 Nov</p>
             <p class="price">Cost: <span class="highlight-price">₹18000</span> / person</p>
             <p>Total Seats: 30</p>
@@ -72,7 +72,7 @@
         </ol>
             <h2>Book Kedarnath Package</h2>
             <br>
-            <form method="post" class="booking-form" onsubmit="return validateDestinationpac()">
+            <form method="post" class="booking-form" onsubmit="return handleBooking(event)">
                 <div class="form-group">
                     <!-- <label for="form">Name: </label> -->
                     <input type="text" id="Name" placeholder="Full Name">
